@@ -1,0 +1,52 @@
+.DS_Store
+# maven
+.apt_generated/
+target/
+src/main/webapp/WEB-INF/classes/
+src/main/webapp/WEB-INF/lib/
+WEB-INF/
+www-test/
+
+# eclipse
+.settings/
+.project
+.factorypath
+.classpath
+eclipse.lib/
+
+# for client side development
+node_modules/
+components/
+bower-task/
+tscommand.tmp.txt
+bower_components/
+.tscache/
+
+src/test/typescript/*.js
+src/test/typescript/*.js.map
+src/test/typescript/*.d.ts
+src/test/typescript/lib/
+!src/test/typescript/lib/DefinitelyTyped/*.*
+
+src/main/less/lib/
+
+src/main/webapp/css
+src/main/webapp/img
+src/main/webapp/template
+src/main/webapp/lib
+src/main/webapp/app.*
+
+src/main/webapp/scripts/*.js
+src/main/webapp/scripts/**/*.js
+src/main/webapp/scripts/*.js.map
+src/main/webapp/scripts/*.d.ts
+
+# bower generated
+src/main/webapp/scripts/lib/*
+
+# karma generated
+test-results.xml
+
+# WebStorm meta file
+.idea/workspace.xml
+.idea/tasks.xml
