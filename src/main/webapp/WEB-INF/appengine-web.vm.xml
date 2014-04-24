@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+  <application>shin1-vm-runtime</application>
+  <version>shin1-vm</version>
+
+  <vm>true</vm>
+  <manual-scaling>
+  	<instances>2</instances>
+  </manual-scaling>
+  <vm-settings>
+  	<setting name="machine_type" value="n1-standard-1"/>
+  	<setting name="apt_get_install" value="redis-server"/>
+  </vm-settings>
+  
+  <precompilation-enabled>false</precompilation-enabled>
+  <sessions-enabled>false</sessions-enabled>
+  <threadsafe>true</threadsafe>
+    
+  <static-files>
+    <include path="/**.*"/>
+  </static-files>
+ 
+  <system-properties>
+    <property name="slim3.hotReloading" value="true"/>
+    <!--
+    <property name="slim3.datastoreDeadline" value="8"/>
+    <property name="slim3.uploadSizeMax" value="1000000"/>
+    <property name="slim3.uploadFileSizeMax" value="100000"/>
+    -->
+    <property name="java.util.logging.config.file" value="WEB-INF/classes/logging.properties"/>
+  </system-properties>
+</appengine-web-app>

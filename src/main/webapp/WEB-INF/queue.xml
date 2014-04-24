@@ -1,0 +1,16 @@
+<queue-entries>
+  <queue>
+    <name>default</name>
+    <rate>10/s</rate>
+  </queue>
+  <queue>
+    <name>queue-shin1-vm</name>
+    <rate>10/s</rate>
+    <target>shin1-vm</target>
+  </queue>
+  <queue>
+    <name>slim3-gtx-queue</name>
+    <rate>10/s</rate>
+    <bucket-size>10</bucket-size>
+  </queue>
+</queue-entries>
